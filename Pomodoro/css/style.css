@@ -1,0 +1,142 @@
+:root{
+--orange: #f87070;
+--cyan: #70f3f8;
+--purple: #d881f8;
+--light-blue: #d7e0ff;
+--dark-blue: #1e213f;
+--darker-blue: #161932;
+--white: #fff;
+--beige: #eff1fa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    color: var(--light-blue);
+    background-color: var(--dark-blue);
+}
+
+.container {
+display: flex;
+align-items: center;
+flex-direction: column;
+width: 100%;
+}
+
+.container h2{
+    padding: 50px;
+}
+
+.nav {
+    border-radius: 50px;
+    padding-left: 10px;
+    width: 373px;
+    height: 63px;
+    background-color: var(--darker-blue);
+    z-index: 99;
+}  
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+
+.nav ul li{
+    
+    opacity: .4;
+    transition: opacity 10ms ease-out;
+    font-weight: 1800px;
+}
+
+
+#indicator{
+    background-color: var(--orange);
+    border-radius: 50px;
+    height: 48px;
+    width: calc(95%/3);
+    margin-top: -93px;
+    transition: margin-left 300ms ease-out;
+}
+
+.pointer{
+    user-select: none;
+    cursor: pointer;
+}
+
+.pointer.active{
+    color: var(--darker-blue);
+    opacity: 1;
+}
+
+
+#outercircle{
+    position: relative;
+    margin-top: 45px;
+    display: flex;
+    height: 410px;
+    width: 410px;
+    border-radius: 50%;
+    background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
+    box-shadow: -50px -50px 100px #272c5a, 50px 50px 100px #121530;
+}
+
+#innercircle{
+    margin: auto;
+    display: flex;
+    height: 366px;
+    width: 366px;
+    border-radius: 50%;
+    background-color: var(--darker-blue);
+}
+
+#ring{
+    margin: auto;
+    width: 339px;
+    height: 339px;
+}
+
+#textcontainer{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 160px;
+    font-size: 45px;
+}
+
+#action{
+    font-size: 30px;
+}
+
+#ring circle{
+    fill: transparent;
+    stroke: var(--orange);
+    stroke-width: 10;
+    stroke-dasharray: 1024, 1024;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dashoffset 200ms ease-out;
+}
+
+
+
+/*#settings {
+    color: rgb(255, 255, 255);
+    width: 370px;
+    height: 63px;
+    background-color: rgb(189, 21, 167)
+}
+*/

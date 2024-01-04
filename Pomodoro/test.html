@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test timer</title>
+</head>
+
+<body>
+    <h2>pomodoro</h2>
+    <nav>
+        <div onclick="timer.select('pomodoro')" class="pointer active">pomodoro</div>
+        <div onclick="timer.select('shortbreak')" class="pointer">short</div>
+        <div onclick="timer.select('longbreak')" class="pointer">long</div>
+    </nav>
+    
+    <script src="/js/timer.js"></script>
+    <script src="/js/settings.js"></script>
+    <script src="/js/index.js"></script>
+    <script>
+    let timer = new Timer;
+    </script>
+
+</body>
+</html>
